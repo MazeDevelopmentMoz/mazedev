@@ -16,9 +16,20 @@
 --blueligth: rgb(0, 139, 189); */
 }
 .dark-theme{
---white: white;
---black: rgb(26, 26, 26);
---blueligth: rgb(0, 139, 189);
+animation-name: dark;
+animation-duration: .3s;
+animation-delay: 0s;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+}
+@keyframes dark {
+   
+    to{
+        --white: white;
+        --black: rgb(26, 26, 26);
+        --blueligth: rgb(0, 139, 189);
+        opacity: 1;
+    }
 }
 body{
     background-color: var(--black);
@@ -27,9 +38,15 @@ body{
 .nav-color{
     background-color: var(--black);
 }
+.toggler-color{
+    color: var(--blueligth);
+}
 .nav-link{
     color: var(--white);
     font-family: 'Quantico', sans-serif;
+}
+.nav-link:hover{
+    color: var(--blueligth);
 }
 .nav-item{
     padding-right: 20px;
