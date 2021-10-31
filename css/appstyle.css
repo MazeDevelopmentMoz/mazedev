@@ -199,7 +199,19 @@ color: var(--white);
     padding: 50px;
 }
 .section-4-image{
-    width: 18%;
+    position: relative;
+    max-width: 15%;
+    max-height: 15%;
+    text-align: center;
+}
+.icon{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    /* top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
 }
 .section-4-titles{
     margin-top: 20px ;
@@ -277,6 +289,12 @@ color: var(--white);
     }
     .col-sm-8{
         width: 100vw;
+    }
+    .box-description{
+        margin-top: 20px;
+    }
+    .image-section2{
+        display: none;
     }
     .gif-3{
         width: 95vw;
