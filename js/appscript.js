@@ -1,4 +1,5 @@
 
+//?========================Dark Mode=====================================
 
 var dark = document.getElementById("darktheme")
 
@@ -21,9 +22,18 @@ dark.onclick = function () {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
         dark.src = "img/sun.png"
+        dark.classList.remove("fa-moon")
+        dark.classList.add("fa-sun")
         localStorage.setItem("theme", "dark")
     } else {
-        dark.src = "img/moon.png"
+        dark.classList.remove("fa-sun")
+        dark.classList.add("fa-moon")
         localStorage.setItem("theme", "light")
     }
 }
+
+//?=====================loader==========================================
+setTimeout(function () {
+    $(".loader").fadeToggle();
+}, 1500)
+//?=====================================================================
