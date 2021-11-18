@@ -197,9 +197,10 @@ color: var(--white);
     text-align: center;
 }
 .icon{
-    text-align: center;
-    color: white;
+    /* text-align: center; */
+    color: var(--white);
     font-size: 25px;
+    border: white;
 }
 .section-4-titles{
     margin-top: 20px ;
@@ -210,6 +211,11 @@ color: var(--white);
     padding-left: 50px;
     text-align: justify;
     color: var(--white);
+}
+.border-icon{
+    border: blue;
+    border-radius: 10px;
+    padding: 5px;
 }
 .fa-balance-scale{
     padding: auto;
@@ -290,11 +296,18 @@ color: var(--white);
         width: 100vw;
         height: 200px;
     }
+    .section-4-description{
+        padding-left: 0px;
+        text-align: justify;
+        color: var(--white);
+    }
     .images-section5{
+        /* display: none; */
         padding-top: 10px;
         width: 100vw;
     }
     .image-section-5{
         width: 90px;
+        /* display: none; */
     }
 }
