@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 30, 2021 18:37:25").getTime();
+var countDownDate = new Date("Nov 30, 2022 18:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -28,5 +28,5 @@ var x = setInterval(function () {
 }, 1000);
 
 function redirect() {
-    window.location.replace("http://127.0.0.1:5500/index-pr.html")
+    window.location.replace("http://localhost/index-pr.html")
 }
