@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['email_error'] = "";
-$_SESSION['email_success'] = $_POST['email_success'];
+// $_SESSION['email_success'] = $_POST['email_success'];
 
 ?>
 
@@ -51,7 +51,7 @@ $_SESSION['email_success'] = $_POST['email_success'];
     <main class="page">
         <nav class="navbar navbar-expand-lg  navbar-light navbar-color">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index-pr.html">
+                <a class="navbar-brand" href="index-pr.php">
                     <img src="img/brand1.png" id="brand" alt="" width="40" height="38"
                         class="d-inline-block align-text-top img-fluid ">
                 </a>
@@ -63,7 +63,7 @@ $_SESSION['email_success'] = $_POST['email_success'];
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">SERVIÇOS</a>
+                            <a class="nav-link" aria-current="page" href="servicos.php">SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.php">CONTACTAR</a>
@@ -81,20 +81,6 @@ $_SESSION['email_success'] = $_POST['email_success'];
                 <div class="col col-lg-6 col-md-6 col-sm-12">
                     <form id="formEmail" method="post">
 
-                        <div class="row">
-                            <?php
-                            if ($_SESSION['email_success'] != "") :
-                            ?>
-                            <div class="alert alert-success text-center"><?= $_SESSION['email'] ?></div>
-                            <?php
-                            endif;
-                            if ($_SESSION['email_error'] != "") :
-                            ?>
-                            <div class="alert alert-danger text-center"><?= $_SESSION['email_error'] ?></div>
-                            <?php
-                            endif;
-                            ?>
-                        </div>
 
                         <div class="row">
                             <div class="text-center col-lg-12 col-md-12 col-sm-12 form-title">
@@ -130,6 +116,14 @@ $_SESSION['email_success'] = $_POST['email_success'];
                             </label>
                             <textarea rows="10" class="form-control" name="assunto" id="assunto" required></textarea>
                         </div>
+                        <div class="row mt-2">
+                            <div class="alert alert-danger text-center" id="error" style="display: none;">
+                                Erro ao enviar menssagem
+                            </div>
+                            <div class="alert alert-success text-center" id="error" style="display: none;">
+                                Menssagem enviada com sucesso!
+                            </div>
+                        </div>
                         <div class="row mt-3 col-4">
                             <button class="btn btn-primary" name="send" onclick="submitForm()">
                                 <div id="spinnermail" style="display:none;" class="spinner-grow spinner-grow-sm"
@@ -143,6 +137,80 @@ $_SESSION['email_success'] = $_POST['email_success'];
                 </div>
             </div>
         </main>
+
+        <footer class="text-center text-lg-start text-white" style="background-color: #242424">
+
+            <div class="container p-4 pb-0">
+
+                <section class="mb-4">
+
+                    <div class="row">
+
+
+                        <div class="col-md-3 col-sm-3 col-lg-3 col-xl-3 mx-0 mt-3">
+                            <h6 class="text-uppercase mb-1 font-weight-bold">Parceiros</h6>
+                            <a class="footer-links" style="color: var(--white);" id="demo" href="">Quick House</a>
+                            <a class="footer-links" style="color: var(--white);" id="demo"
+                                href="https://gudezamusic.com/public/">Gudeza Music</a>
+
+                            <div class="row">
+                                <div class=" col-lg-9 col-md-9 col-sm-9 mt-2 px-1">
+                                    <input type="email" class="form-control" name="email" id="emailsubmit"
+                                        placeholder="example@gmail.com" required>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 mt-2 px-0">
+                                    <button class="btn btn-secondary" onclick="submitEmail()">
+                                        <div id="spinnermail" style="display:none;" class="spinner-grow spinner-grow-sm"
+                                            role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <div id="text-enviar">Enviar</div>
+                                    </button>
+                                </div>
+                            </div>
+                            </p>
+                            <p>
+                            </p>
+                        </div>
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-1 font-weight-bold">Contactos</h6>
+                            <i class="fas fa-home"></i> Maputo, Zimpeto, MZ <br>
+                            <i class="fas fa-envelope"></i> info@mazedev.com <br>
+                            <i class="fas fa-phone"></i> (+258) 840 - 106 - 404
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-center">
+                            <h6 class="text-uppercase mb-1 font-weight-bold">Siga nos</h6>
+
+                            <a href="#" style="color: var(--white);"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="color: var(--white);"><i class="fab fa-twitter"></i></a>
+                            <a href="#" style="color: var(--white);"><i class="fab fa-instagram"></i></a>
+
+                            <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Parceiros</h6> -->
+                            <figure>
+                                <!-- <img src="img/gudeza.png" alt="gudezamusic" class=""> -->
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="text-center p-2" style="background-color: rgb(0, 123, 216, 0.500)">
+                &copy; 2021
+                <a class="text-white" href="#">Maze Development</a>
+                Todos Direitos Reservados.
+
+            </div>
+
+        </footer>
     </main>
 
     <!-- Script -->
