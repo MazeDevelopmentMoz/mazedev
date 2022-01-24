@@ -69,7 +69,7 @@ section:nth-of-type(7) {
 <main class="page">
     <nav class="navbar navbar-expand-lg  navbar-light navbar-color">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index-pr.php">
+            <a class="navbar-brand" href="index-pr.html">
                 <img src="img/brand1.png" id="brand" alt="" width="40" height="38"
                     class="d-inline-block align-text-top img-fluid ">
             </a>

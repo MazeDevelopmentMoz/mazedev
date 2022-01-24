@@ -90,7 +90,8 @@ function submitEmail() {
                 // show response from the php script
                 session = "Menssage enviada com sucesso";
                 $.post("index-pr.php", { session: session });
-                window.location.replace("http://localhost/mazedev/index-pr.php")
+                // window.location.replace("http://localhost/mazedev/index-pr.html")
+                window.location.replace("https://mazedevelopmentmoz.github.io/mazedev/index-pr.html")
                 console.log(data)
             },
             error: function (data) {

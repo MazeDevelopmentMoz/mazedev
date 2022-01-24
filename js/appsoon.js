@@ -28,5 +28,6 @@ var x = setInterval(function () {
 }, 1000);
 
 function redirect() {
-    window.location.replace("http://localhost/index-pr.html")
+    // window.location.replace("http://localhost/index-pr.html")
+    window.location.replace("https://mazedevelopmentmoz.github.io/mazedev/index-pr.html")
 }
