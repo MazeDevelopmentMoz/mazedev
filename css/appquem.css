@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(238, 227, 227);
+    /* margin: 100px; */
+}
+
+.sobre {
+    color: black;
+    margin: 10px;
+}
+
+.opacidade {
+    opacity: 0.3;
+}
+
+.button {
+    color: aliceblue;
+    background-color: dimgray;
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: x-large;
+    margin-top: -10px;
+    min-width: 50px;
+    max-width: 300px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.row div {
+    margin-bottom: 20px;
+}
+
+.cont {
+    margin-top: 50px;
+}
+
+/*****************************************contacte-nos*******************************************/
+.contacte {
+    margin-top: 15px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 8px;
+    margin: 10px;
+}
+
+.button-2 {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: black;
+}
+
+/****************************************Imagem***********************************************/
+.imagem {
+    width: 100%;
+    margin-top: 40px;
+    height: 60%;
+}
+
+.w3-image {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    color: inherit
+}
