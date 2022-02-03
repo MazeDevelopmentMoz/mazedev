@@ -32,7 +32,7 @@ function submitForm() {
                     // Clean form and show message successful
 
                     $('#success').removeAttr("style");
-                    // window.location.replace("http://localhost/mazedev/contacto.php")
+                   window.location.replace("https://mazedeve.com/contacto.php")
                 },
                 error: function (data) {
                     // name.val() = ""
@@ -90,9 +90,8 @@ function submitEmail() {
                 // show response from the php script
                 session = "Menssage enviada com sucesso";
                 $.post("index-pr.php", { session: session });
-                // window.location.replace("http://localhost/mazedev/index-pr.html")
-                window.location.replace("https://mazedevelopmentmoz.github.io/mazedev/index-pr.html")
-                console.log(data)
+                window.location.replace("https://mazedeve.com")
+               
             },
             error: function (data) {
                 console.log("ocorreu um erro \n")

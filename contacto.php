@@ -1,11 +1,3 @@
-<?php
-session_start();
-$_SESSION['email_error'] = "";
-// $_SESSION['email_success'] = $_POST['email_success'];
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
