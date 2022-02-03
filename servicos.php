@@ -107,28 +107,20 @@ section:nth-of-type(7) {
     <section></section>
     <section class="section-parallax">
         <h1>Aplicações</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nisi placeat. Praesentium eos, dignissimos at
-            odio vel repellendus perferendis eum libero mollitia, reprehenderit exercitationem nisi aspernatur. Optio
-            quasi
-            sed doloremque!</p>
+        <p>Desenvolvemos aplicativos IOS e Android para qualquer tipo de finalidade e sistemas computacionais de gestão
+            de acordo com as necessidades da empresa.</p>
     </section>
 
     <section></section>
     <section class="section-parallax">
         <h1>Design</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nisi placeat. Praesentium eos, dignissimos at
-            odio vel repellendus perferendis eum libero mollitia, reprehenderit exercitationem nisi aspernatur. Optio
-            quasi
-            sed doloremque!</p>
+        <p>Criação de logotipo, logomarca para a sua empresa, videos comerciais.</p>
     </section>
 
     <section></section>
     <section class="section-parallax">
-        <h1>Publicidade</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nisi placeat. Praesentium eos, dignissimos at
-            odio vel repellendus perferendis eum libero mollitia, reprehenderit exercitationem nisi aspernatur. Optio
-            quasi
-            sed doloremque!</p>
+        <!-- <h1>Publicidade</h1>
+        <p></p> -->
     </section>
     <footer class="text-center text-lg-start text-white" style="background-color: #242424">
 
@@ -141,7 +133,7 @@ section:nth-of-type(7) {
 
                     <div class="col-md-3 col-sm-3 col-lg-3 col-xl-3 mx-0 mt-3">
                         <h6 class="text-uppercase mb-1 font-weight-bold">Parceiros</h6>
-                        <a class="footer-links" style="color: var(--white);" id="demo" href="">Quick House</a>
+                        <!-- <a class="footer-links" style="color: var(--white);" id="demo" href="">Quick House</a> -->
                         <a class="footer-links" style="color: var(--white);" id="demo"
                             href="https://gudezamusic.com/public/">Gudeza Music</a>
 
@@ -179,9 +171,11 @@ section:nth-of-type(7) {
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-center">
                         <h6 class="text-uppercase mb-1 font-weight-bold">Siga nos</h6>
 
-                        <a href="#" style="color: var(--white);"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="color: var(--white);"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="color: var(--white);"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/maze.of.development" style="color: var(--white);"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" style="color: var(--white);"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/mazedev_/" style="color: var(--white);"><i
+                                class="fab fa-instagram"></i></a>
 
                         <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Parceiros</h6> -->
                         <figure>
