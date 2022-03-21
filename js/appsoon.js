@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 03, 2022 18:37:25").getTime();
+var countDownDate = new Date("Feb 03, 2022  20:00:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -28,6 +28,5 @@ var x = setInterval(function () {
 }, 1000);
 
 function redirect() {
-    // window.location.replace("http://localhost/index-pr.html")
-    window.location.replace("https://mazedevelopmentmoz.github.io/mazedev/index-pr.html")
+    window.location.replace("http://mazedeve.com/index-pr.html")
 }
